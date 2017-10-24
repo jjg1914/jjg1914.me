@@ -1,0 +1,13 @@
+<article>
+  <header>
+    <h1>{{ post.title }}</h1>
+    <p>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date : "%B %e, %Y" }}
+      </time>
+    </p>
+  </header>
+  <section>
+    {{ post.content }}
+  </section>
+</article>
